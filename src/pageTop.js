@@ -26,7 +26,7 @@ function pageTopLoad() {
   const buttonContact = document.createElement("button");
   buttonContact.setAttribute("id", "buttonContact");
   buttonContact.setAttribute("class", "tablinks");
-  buttonContact.textContent = "Contact";
+  buttonContact.textContent = "Contact Us";
 
   topDiv.appendChild(logo);
   tabs.appendChild(buttonHome);
@@ -34,7 +34,6 @@ function pageTopLoad() {
   tabs.appendChild(buttonContact);
   topDiv.appendChild(tabs);
   skeleton.appendChild(topDiv);
-
   container.appendChild(skeleton);
 }
 

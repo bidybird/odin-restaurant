@@ -24,8 +24,8 @@ function homeTabDisplay() {
   mainBody.appendChild(goatMeat);
   mainBody.appendChild(hook);
   mainBody.appendChild(foodTestimony);
-  //home.appendChild(mainBody);
-  container.appendChild(mainBody);
+  skeleton.appendChild(mainBody);
+  //container.appendChild(mainBody);
 }
 
 export { homeTabDisplay };

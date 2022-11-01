@@ -119,8 +119,8 @@ function menuTabDisplay() {
   mItemFour.appendChild(textItemFour);
   mItemFour.appendChild(imgItemFour);
   mainBody.appendChild(mItemFour);
-  //menu.appendChild(mainBody);
-  container.appendChild(mainBody);
+  skeleton.appendChild(mainBody);
+  //container.appendChild(mainBody);
 }
 
 export { menuTabDisplay };

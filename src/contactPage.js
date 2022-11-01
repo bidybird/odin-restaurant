@@ -38,7 +38,8 @@ function contactTabDisplay() {
   textContact.appendChild(headContact);
   textContact.appendChild(phoneContact);
   mainBody.appendChild(textContact);
-  contact.appendChild(mainBody);
+  skeleton.appendChild(mainBody);
+  //container.appendChild(mainBody);
 }
 
 export { contactTabDisplay };
