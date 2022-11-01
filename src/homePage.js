@@ -1,41 +1,31 @@
+function homeTabDisplay() {
+  const mainBody = document.createElement("div");
+  mainBody.setAttribute("id", "mainBody");
 
-mainBody = document.createElement("div");
-mainBody.setAttribute("id", "mainBody");
+  const restaurantName = document.createElement("h2");
+  restaurantName.setAttribute("id", "restaurantName");
+  restaurantName.textContent = "The Grazing Goat";
 
-restaurantName = document.createElement("h2");
-restaurantName.setAttribute("id", "restaurantName");
+  const goatMeat = document.createElement("img");
+  goatMeat.setAttribute("id", "goatMeat");
+  goatMeat.src =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfKYuWI3Yl-kEqWmPCJS2UucO0dFQo7b75_A&usqp=CAU";
 
-goatMeat = document.createElement("img");
-goatMeat.setAttribute("id", "goatMeat");
+  const hook = document.createElement("h3");
+  hook.setAttribute("id", "hook");
+  hook.textContent = "Don't Give Up the Goat.";
 
-hook = document.createElement("h3");
-hook.setAttribute("id", "hook");
+  const foodTestimony = document.createElement("p");
+  foodTestimony.setAttribute("id", "foodTestimony");
+  foodTestimony.textContent =
+    "The Grazing Goat's goat meat is delicious.\nThe goat meat issa so tender and their potatoes are bearable.\n-Blunt Guy";
 
-foodTestimony = document.createElement("p");
-foodTestimony.setAttribute("id", "foodTestimony");
+  mainBody.appendChild(restaurantName);
+  mainBody.appendChild(goatMeat);
+  mainBody.appendChild(hook);
+  mainBody.appendChild(foodTestimony);
+  //home.appendChild(mainBody);
+  container.appendChild(mainBody);
+}
 
-
-mainBody.appendChild(restaurantName);
-mainBody.appendChild(goatMeat);
-mainBody.appendChild(hook);
-mainBody.appendChild(foodTestimony);
-home.appendChild(mainBody)
-
-
-<div id="content"></div>
-<div id="skeleton">
-    <div id="top">
-        <img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6NOTIRjNnhmlqygnmP3EFWmIV1pbQoG1oEQ&usqp=CAU">
-        <ul id="tabs">
-            <button id="buttonHome">home</button>
-            <button id="buttonMenu">menu</button>
-            <button id="buttonContact">contact</button>
-        </ul>
-    </div>
-    <div id="mainBody">
-        <h2>The Grazing Goat</h2>
-        <img id="goatMeat" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfKYuWI3Yl-kEqWmPCJS2UucO0dFQo7b75_A&usqp=CAU" >
-        <h3>Don't give up the goat.</h3>
-        <p>The Grazing Goat's goat meat is delicious.\n"The goat meat issa so tender, their potatoes are bearable."\n-Blunt Guy</p>
-    </div>
-</div>
+export { homeTabDisplay };
