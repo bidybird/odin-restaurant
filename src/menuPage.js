@@ -4,6 +4,7 @@ function menuTabDisplay() {
 
   const restaurantName = document.createElement("h2");
   restaurantName.setAttribute("id", "restaurantName");
+  restaurantName.textContent = "The Grazing Goat";
 
   const mItemOne = document.createElement("div");
   mItemOne.setAttribute("id", "mItemOne");
