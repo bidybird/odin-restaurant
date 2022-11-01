@@ -1,96 +1,59 @@
-export function pageLoad() {
+function pageTopLoad() {
+  const skeleton = document.createElement("div");
+  skeleton.setAttribute("id", "skeleton");
 
-skeleton = document.createElement("div");
-skeleton.setAttribute("id", "skeleton");
+  const topDiv = document.createElement("div");
+  topDiv.setAttribute("id", "topDiv");
 
-topDiv = document.createElement("div");
-topDiv.setAttribute("id", "topDiv");
+  const logo = document.createElement("img");
+  logo.setAttribute("id", "logo");
+  logo.src =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6NOTIRjNnhmlqygnmP3EFWmIV1pbQoG1oEQ&usqp=CAU";
 
-logo = document.createElement("img");
-logo.setAttribute("id", "logo");
+  const tabs = document.createElement("div");
+  tabs.setAttribute("id", "tabs");
 
-tabs = document.createElement("div");
-tabs.setAttribute("id", "tabs");
+  const buttonHome = document.createElement("button");
+  buttonHome.setAttribute("id", "buttonHome");
+  buttonHome.setAttribute("class", "tablinks");
+  buttonHome.textContent = "Home";
+  //buttonHome.addEventListener("click"), openTab(e, "home");
 
-buttonHome = document.createElement("button");
-buttonHome.setAttribute("id", "buttonHome");
-buttonHome.setAttribute("class", "tablinks");
-buttonHome.addEventListener('click'), openTab(e, "home");
+  const buttonMenu = document.createElement("button");
+  buttonMenu.setAttribute("id", "buttonMenu");
+  buttonMenu.setAttribute("class", "tablinks");
+  buttonMenu.textContent = "Menu";
+  //buttonHome.addEventListener("click"), openTab(e, "menu");
 
+  const buttonContact = document.createElement("button");
+  buttonContact.setAttribute("id", "buttonContact");
+  buttonContact.setAttribute("class", "tablinks");
+  buttonContact.textContent = "Contact";
+  //buttonHome.addEventListener("click"), openTab(e, "content");
 
-buttonMenu = document.createElement("button");
-buttonMenu.setAttribute("id", "buttonMenu");
-buttonMenu.setAttribute("class", "tablinks");
-buttonHome.addEventListener('click'), openTab(e, "menu");
+  const home = document.createElement("div");
+  home.setAttribute("id", "home");
+  home.setAttribute("class", "tabcontent");
 
+  const menu = document.createElement("div");
+  menu.setAttribute("id", "menu");
+  menu.setAttribute("class", "tabcontent");
 
-buttonContact = document.createElement("button");
-buttonContact.setAttribute("id", "buttonContact");
-buttonContact.setAttribute("class", "tablinks");
-buttonHome.addEventListener('click'), openTab(e, "content");
+  const contact = document.createElement("div");
+  contact.setAttribute("id", "contact");
+  contact.setAttribute("class", "tabcontent");
 
+  topDiv.appendChild(logo);
+  tabs.appendChild(buttonHome);
+  tabs.appendChild(buttonMenu);
+  tabs.appendChild(buttonContact);
+  topDiv.appendChild(tabs);
+  skeleton.appendChild(topDiv);
 
-home = document.createElement("div");
-home.setAttribute("id", "home");
-home.setAttribute("class", "tabcontent");
-
-
-menu = document.createElement("div");
-menu.setAttribute("id", "menu");
-menu.setAttribute("class", "tabcontent");
-
-
-
-contact = document.createElement("div");
-contact.setAttribute("id", "contact");
-contact.setAttribute("class", "tabcontent");
-
-
-topDiv.appendChild(logo);
-tabs.appendChild(buttonHome);
-tabs.appendChild(buttonMenu);
-tabs.appendChild(buttonContact);
-topDiv.appendChild(tabs);
-skeleton.appendChild(topDiv);
-
-
-<div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'home')" id="buttonHome">Home</button>
-  <button class="tablinks" onclick="openTab(event, 'menu')">Menu</button>
-  <button class="tablinks" onclick="openTab(event, 'contact')">Content</button>
-</div>
-
-<div id="home" class="tabcontent">
-  //import of homePage.js export `${homeDisplay()}`
-</div>
-
-<div id="menu" class="tabcontent">
-  //import of menuPage.js export `${menuDisplay()}`
-</div>
-
-<div id="contact" class="tabcontent">
-  //import of contactPage.js export `${contentDisplay()}`
-</div>
-
-function openTab(event, tabContentId) {
-    let i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabContentId).style.display = "block";
-    event.currentTarget.className += " active";
-  }
-
-document.getElementById("buttonHome").click();
-
-container.appendChild(skeleton);
-container.appendChild(home);
-container.appendChild(menu);
-container.appendChild(contact);
-
+  container.appendChild(skeleton);
+  container.appendChild(home);
+  container.appendChild(menu);
+  container.appendChild(contact);
 }
+
+export { pageTopLoad };
