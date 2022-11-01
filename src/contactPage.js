@@ -1,39 +1,45 @@
-mainBody = document.createElement("div");
-mainBody.setAttribute("id", "mainBody");
+function contactTabDisplay() {
+  const mainBody = document.createElement("div");
+  mainBody.setAttribute("id", "mainBody");
 
-restaurantName = document.createElement("h2");
-restaurantName.setAttribute("id", "restaurantName");
+  const restaurantName = document.createElement("h2");
+  restaurantName.setAttribute("id", "restaurantName");
+  restaurantName.textContent = "The Grazing Goat";
 
-goatMeat = document.createElement("img");
-goatMeat.setAttribute("id", "goatMeat");
+  const locationInfo = document.createElement("div");
 
-hook = document.createElement("h3");
-hook.setAttribute("id", "hook");
+  const lTitle = document.createElement("h3");
+  lTitle.textContent = "Our Location";
 
-foodTestimony = document.createElement("p");
-foodTestimony.setAttribute("id", "foodTestimony");
+  const lImg = document.createElement("img");
+  lImg.src =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWkHaVfWq6meBbhpnINcrVyVKMQ5JhY2ZDLA&usqp=CAU";
 
-mainBody.appendChild(restaurantName);
-mainBody.appendChild(goatMeat);
-mainBody.appendChild(hook);
-mainBody.appendChild(foodTestimony);
-contact.appendChild(mainBody);
+  const lAddress = document.createElement("p");
+  lAddress.textContent =
+    "9999 W Somewhereia Street, Place, 51 9999. On the corner of 31st and Somewhereia Street.";
 
+  const textContact = document.createElement("div");
+  textContact.setAttribute("class", "menuText");
 
-<div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'home')" id="buttonHome">Home</button>
-  <button class="tablinks" onclick="openTab(event, 'menu')">Menu</button>
-  <button class="tablinks" onclick="openTab(event, 'contact')">Content</button>
-</div>
+  const headContact = document.createElement("h3");
+  headContact.textContent = "Manager: Phillip On'Gute";
 
-<div id="home" class="tabcontent">
-  //import of homePage.js export `${homeDisplay()}`
-</div>
+  const phoneContact = document.createElement("div");
+  phoneContact.textContent = "Phone: 999-999-9999";
 
-<div id="menu" class="tabcontent">
-  //import of menuPage.js export `${menuDisplay()}`
-</div>
+  mainBody.appendChild(restaurantName);
 
-<div id="contact" class="tabcontent">
-  //import of contactPage.js export `${contentDisplay()}`
-</div>
+  locationInfo.appendChild(lTitle);
+  locationInfo.appendChild(lImg);
+  locationInfo.appendChild(lAddress);
+  mainBody.appendChild(locationInfo);
+
+  textContact.appendChild(headContact);
+  textContact.appendChild(phoneContact);
+  mainBody.appendChild(textContact);
+  //contact.appendChild(contactInfo);
+  container.appendChild(mainBody);
+}
+
+export { contactTabDisplay };
