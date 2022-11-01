@@ -1,9 +1,10 @@
 import { pageTopLoad } from "./pageTop";
-//import { homeTabDisplay } from "./homePage";
+import { homeTabDisplay } from "./homePage";
 //import { menuTAbDisplay } from "./menuPage";
 //import { contactTabDisplay } from "./contactPage";
 
 pageTopLoad();
+homeTabDisplay();
 
 // function openTab(event, tabContentId) {
 //   let i, tabcontent, tablinks;
