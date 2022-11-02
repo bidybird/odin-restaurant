@@ -5,7 +5,7 @@ function homeTabDisplay() {
   mainBody.setAttribute("id", "mainBody");
 
   const restaurantName = document.createElement("h2");
-  restaurantName.setAttribute("id", "restaurantName");
+  restaurantName.setAttribute("class", "restaurantName");
   restaurantName.textContent = "The Grazing Goat";
 
   const goatMeat = document.createElement("img");

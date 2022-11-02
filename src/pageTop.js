@@ -11,7 +11,7 @@ function pageTopLoad() {
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6NOTIRjNnhmlqygnmP3EFWmIV1pbQoG1oEQ&usqp=CAU";
 
   const tabs = document.createElement("div");
-  tabs.setAttribute("id", "tabs");
+  tabs.setAttribute("class", "tab");
 
   const buttonHome = document.createElement("button");
   buttonHome.setAttribute("id", "buttonHome");

@@ -5,7 +5,7 @@ function menuTabDisplay() {
   mainBody.setAttribute("id", "mainBody");
 
   const restaurantName = document.createElement("h2");
-  restaurantName.setAttribute("id", "restaurantName");
+  restaurantName.setAttribute("class", "restaurantName");
   restaurantName.textContent = "The Grazing Goat";
 
   const mItemOne = document.createElement("div");
@@ -23,11 +23,11 @@ function menuTabDisplay() {
   textItemOne.setAttribute("class", "menuText");
 
   const headItemOne = document.createElement("h3");
-  headItemOne.setAttribute("id", "headItemOne");
+  headItemOne.setAttribute("class", "foodHeader");
   headItemOne.textContent = "Potato Stew with Goat: $11.99";
 
   const paraItemOne = document.createElement("p");
-  paraItemOne.setAttribute("id", "paraItemOne");
+  paraItemOne.setAttribute("class", "foodDisc");
   paraItemOne.textContent = "Our signature meat on skewers.";
 
   const mItemTwo = document.createElement("div");
@@ -45,11 +45,11 @@ function menuTabDisplay() {
   textItemTwo.setAttribute("class", "menuText");
 
   const headItemTwo = document.createElement("h3");
-  headItemTwo.setAttribute("id", "headItemTwo");
+  headItemTwo.setAttribute("class", "foodHeader");
   headItemTwo.textContent = "Goat Kebabs: $9.99";
 
   const paraItemTwo = document.createElement("p");
-  paraItemTwo.setAttribute("id", "paraItemTwo");
+  paraItemTwo.setAttribute("class", "foodDisc");
   paraItemTwo.textContent =
     "The potatoes in our stew soak up the gamey flavour of goat and a subtle hint of our mild curry.";
 
@@ -68,11 +68,11 @@ function menuTabDisplay() {
   textItemThree.setAttribute("class", "menuText");
 
   const headItemThree = document.createElement("h3");
-  headItemThree.setAttribute("id", "headItemThree");
+  headItemThree.setAttribute("class", "foodHeader");
   headItemThree.textContent = "Pasta: $8.99";
 
   const paraItemThree = document.createElement("p");
-  paraItemThree.setAttribute("id", "paraItemThree");
+  paraItemThree.setAttribute("class", "foodDisc");
   paraItemThree.textContent = "Our only meal without meat.";
 
   const mItemFour = document.createElement("div");
@@ -90,11 +90,11 @@ function menuTabDisplay() {
   textItemFour.setAttribute("class", "menuText");
 
   const headItemFour = document.createElement("h3");
-  headItemFour.setAttribute("id", "headItemFour");
+  headItemFour.setAttribute("class", "foodHeader");
   headItemFour.textContent = "Gyro: $9.99";
 
   const paraItemFour = document.createElement("p");
-  paraItemFour.setAttribute("id", "paraItemFour");
+  paraItemFour.setAttribute("class", "foodDisc");
   paraItemFour.textContent = "Slices of slowly cooked meat.";
 
   mainBody.appendChild(restaurantName);
