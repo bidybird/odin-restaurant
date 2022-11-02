@@ -1,4 +1,6 @@
 function homeTabDisplay() {
+  hip.removeChild(hip.firstElementChild);
+
   const mainBody = document.createElement("div");
   mainBody.setAttribute("id", "mainBody");
 
@@ -24,7 +26,8 @@ function homeTabDisplay() {
   mainBody.appendChild(goatMeat);
   mainBody.appendChild(hook);
   mainBody.appendChild(foodTestimony);
-  skeleton.appendChild(mainBody);
+  hip.appendChild(mainBody);
+  skeleton.appendChild(hip);
   //container.appendChild(mainBody);
 }
 

@@ -1,4 +1,6 @@
 function contactTabDisplay() {
+  hip.removeChild(hip.firstElementChild);
+
   const mainBody = document.createElement("div");
   mainBody.setAttribute("id", "mainBody");
 
@@ -38,7 +40,7 @@ function contactTabDisplay() {
   textContact.appendChild(headContact);
   textContact.appendChild(phoneContact);
   mainBody.appendChild(textContact);
-  skeleton.appendChild(mainBody);
+  hip.appendChild(mainBody);
   //container.appendChild(mainBody);
 }
 

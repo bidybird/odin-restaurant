@@ -1,4 +1,6 @@
 function menuTabDisplay() {
+  hip.removeChild(hip.firstElementChild);
+
   const mainBody = document.createElement("div");
   mainBody.setAttribute("id", "mainBody");
 
@@ -119,7 +121,7 @@ function menuTabDisplay() {
   mItemFour.appendChild(textItemFour);
   mItemFour.appendChild(imgItemFour);
   mainBody.appendChild(mItemFour);
-  skeleton.appendChild(mainBody);
+  hip.appendChild(mainBody);
   //container.appendChild(mainBody);
 }
 
